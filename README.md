@@ -47,3 +47,27 @@ parent_id | produto-001 | SKU do produto pai; Utilizado para produtos variáveis
 upsell_ids | produto-001, produto-002 | Produtos recomendados (upsell)
 cross_sell_ids | produto-003, produto-004 | Produtos recomendados (cross sell)
 menu_order | 1 | Ordem no menu
+
+### Pré-requisitos para criação do arquivo
+* CSV deve ser no formato UTF-8;
+* Todas as datas devem ser definidas no fuso-horário local;
+* Múltiplos valores devem ser separados por vírgula;
+* Imagens devem ser previamente carregadas, pois sua definição se dá pela indicação da URL.
+
+> [Clique aqui para baixar um exemplo da planilha de importação](./docs/importacao_produtos.csv)
+
+## Processo de Importação
+
+1. Vá para **Woocommerce > Produtos**
+2. Selecione **Importar** no topo da página; Será aberta a tela de upload
+3. Clique em **Selecionar o arquivo** e escolha o CSV de importação
+4. Selecione a opção **Atualizar produtos existentes**
+5. Clique em **Continue**
+6. Será aberta a tela de mapeamento dos atributos; Faça o mapeamento
+7. Clique em **Executar Importação**
+
+
+
+##### Referências
+* [Exportação e Importação de Produtos](https://docs.woocommerce.com/document/product-csv-importer-exporter/)
+* [Esquema de Dados](https://github.com/woocommerce/woocommerce/wiki/Product-CSV-Import-Schema#csv-columns-and-formatting)
